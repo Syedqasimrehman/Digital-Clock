@@ -84,16 +84,16 @@ const thin = () => {
     const hours = now.getHours();
     const mintes = now.getMinutes();
     const secounds = now.getSeconds();
+    const date = now.getDate();
     const day = days[now.getDay()];
     const month = months[now.getMonth()];
-    const date = now.getDate();
     const html = `
     <span>${hours}</span> :
     <span>${mintes}</span> :
     <span>${secounds}</span> <hr>
-    <span>${month}</span>
-    <span>${day}</span>
     <span>${date}</span>
+    <span>${day}</span>
+    <span>${month}</span>
    `
     hms.innerHTML = html;
 }
